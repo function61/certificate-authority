@@ -4,7 +4,7 @@
     	"ssl1.function61.com",
     	"*.function61.com",
     	"*.fn61.net",
-    	"*.xs.fi"
+    	"*.dev-laptop.xs.fi"
     ],
     "key": {
         "algo": "ecdsa",
