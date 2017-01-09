@@ -45,9 +45,9 @@ You'll end up with these new files:
 You have to import this root certificate to all of your devices that you want to trust
 accessing services backed by the server certs that you'll be signing with this project.
 
-You can import this certificate in Windows by:
+Import this root certificate in Windows:
 
-- clicking on the .crt file
+- Click on the .crt file
 - Install Certificate
 - Storate Location: Local Machine
 - Place all certificates in the following store: Trusted Root Certification Authorities
@@ -66,10 +66,31 @@ You'll end up with these new files:
 - `server-signer/signed/server.key` - the private key to the certificate. Protect this.
 
 
+Sign a client certificate
+-------------------------
+
+```
+$ client-signer/sign.sh
+```
+
+You'll end up with these new files:
+
+- `client-signer/signed/client.crt` - the new client certificate
+- `client-signer/signed/client.key` - the private key to the certificate. Protect this.
+- `client-signer/signed/client.p12` - `p12 = encrypt(.crt + .key)`: for delivering client cert to browsers / mobile devices
+
+Import the `.p12` file in Windows:
+
+- Click the .p12 file
+- Store Location: Current User
+- Password: (the password you used for the .p12 export)
+- Automatically select the certificate store based on the type of certificate
+
 File layout
 -----------
 
 - `server-signer/sign.sh` => for signing server certificates.
+- `client-signer/sign.sh` => for signing client certificates.
 
 
 Roadmap
@@ -79,10 +100,13 @@ Roadmap
 - Implement intermediate CA:s, so the root CA cert can be kept totally offline.
 
 
-Links
------
+Notes & links
+-------------
 
+- Wildcard certificates (`*.domain.com`)
+  [apply only one level](http://security.stackexchange.com/questions/10538/what-certificates-are-needed-for-multi-level-subdomains)
 - [How do SSL certificates work](https://function61.com/blog/2017/how-do-ssl-certificates-work/)
+- [CoreOS's primer on using cfssl](https://coreos.com/os/docs/latest/generate-self-signed-certificates.html#generate-ca-and-certificates)
 - Why ECDSA? Read this
   [Cloudflare blog entry](https://blog.cloudflare.com/ecdsa-the-digital-signature-algorithm-of-a-better-internet/)
 - Only intermediate certificates have to be bundled: [1](http://security.stackexchange.com/questions/65332/ssl-root-certificate-optional),
