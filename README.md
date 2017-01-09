@@ -111,3 +111,30 @@ Notes & links
   [Cloudflare blog entry](https://blog.cloudflare.com/ecdsa-the-digital-signature-algorithm-of-a-better-internet/)
 - Only intermediate certificates have to be bundled: [1](http://security.stackexchange.com/questions/65332/ssl-root-certificate-optional),
   [2](http://stackoverflow.com/questions/20409534/how-does-an-ssl-certificate-chain-bundle-work)
+
+
+Why cfssl?
+----------
+
+Alternatives, in order of attractiveness:
+
+- https://github.com/cloudflare/cfssl
+  Go, mature feature coverage, modern, weak documentation.
+
+- OpenSSL
+  De-facto solution, good resources available,
+  [codebase of bad quality](https://news.ycombinator.com/item?id=7556407), complex commands,
+  [need to write verbose config files](https://jamielinux.com/docs/openssl-certificate-authority/) because cannot
+  specify something from command line.
+
+- https://github.com/OpenVPN/easy-rsa/blob/master/README.quickstart.md
+  Bash, mature. I haven't researched this enough.
+
+- https://github.com/redredgroovy/easy-ca
+  Bash, not configurable.
+
+- https://github.com/google/easypki
+  Go, Very immature, doesn't seem to work properly, abandoned.
+
+- https://github.com/nfisher/easyca
+  Go, web based, web-based UI, not configurable
