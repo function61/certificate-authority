@@ -1,0 +1,17 @@
+{
+	"ca": {
+		"expiry": "175200h"
+	},
+    "CN": "function61.com CA",
+    "key": {
+        "algo": "rsa",
+        "size": 2048
+    },
+    "names": [
+        {
+            "C": "FI",
+            "O": "function61.com",
+            "ST": "Tampere"
+        }
+    ]
+}
