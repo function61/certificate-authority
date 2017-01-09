@@ -4,8 +4,8 @@
 	},
     "CN": "function61.com CA",
     "key": {
-        "algo": "rsa",
-        "size": 2048
+        "algo": "ecdsa",
+        "size": 256
     },
     "names": [
         {
