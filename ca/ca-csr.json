@@ -1,7 +1,7 @@
 {
-	"ca": {
-		"expiry": "175200h"
-	},
+    "ca": {
+        "expiry": "175200h"
+    },
     "CN": "function61.com CA",
     "key": {
         "algo": "ecdsa",
