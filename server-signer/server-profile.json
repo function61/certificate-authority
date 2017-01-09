@@ -1,0 +1,21 @@
+{
+    "CN": "ssl1.function61.com",
+    "hosts": [
+    	"ssl1.function61.com",
+    	"*.function61.com",
+    	"*.fn61.net",
+    	"*.xs.fi"
+    ],
+    "key": {
+        "algo": "ecdsa",
+        "size": 256
+    },
+    "names": [
+        {
+            "C": "FI",
+            "O": "function61.com",
+            "ST": "Tampere"
+        }
+    ]
+}
+
