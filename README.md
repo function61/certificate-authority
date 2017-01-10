@@ -121,11 +121,14 @@ Alternatives, in order of attractiveness:
 - https://github.com/cloudflare/cfssl
   Go, mature feature coverage, modern, weak documentation.
 
-- OpenSSL
+- [OpenSSL](https://www.openssl.org/)
   De-facto solution, good resources available,
   [codebase of bad quality](https://news.ycombinator.com/item?id=7556407), complex commands,
   [need to write verbose config files](https://jamielinux.com/docs/openssl-certificate-authority/) because cannot
   specify something from command line.
+
+- [ehazlett/certm](https://github.com/ehazlett/certm)
+  Go, haven't researched this.
 
 - https://github.com/OpenVPN/easy-rsa/blob/master/README.quickstart.md
   Bash, mature. I haven't researched this enough.
