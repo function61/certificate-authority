@@ -1,10 +1,11 @@
 {
-    "CN": "ssl1.function61.com",
+    "CN": "fn61.net",
     "hosts": [
-    	"ssl1.function61.com",
-    	"*.function61.com",
-    	"*.fn61.net",
-    	"*.dev-laptop.xs.fi"
+    	"*.prod3c.fn61.net",
+    	"*.prod3d.fn61.net",
+    	"*.prod4.fn61.net",
+    	"*.prod5.fn61.net",
+    	"*.dev.fn61.net"
     ],
     "key": {
         "algo": "ecdsa",
