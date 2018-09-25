@@ -107,7 +107,8 @@ Notes & links
 -------------
 
 - Wildcard certificates (`*.domain.com`)
-  [apply only one level](http://security.stackexchange.com/questions/10538/what-certificates-are-needed-for-multi-level-subdomains)
+  [apply only one level](http://security.stackexchange.com/questions/10538/what-certificates-are-needed-for-multi-level-subdomains),
+  [more](http://security.stackexchange.com/questions/10538/what-certificates-are-needed-for-multi-level-subdomains)
 - [How do SSL certificates work](https://function61.com/blog/2017/how-do-ssl-certificates-work/)
 - [CoreOS's primer on using cfssl](https://coreos.com/os/docs/latest/generate-self-signed-certificates.html#generate-ca-and-certificates)
 - Why ECDSA? Read this
