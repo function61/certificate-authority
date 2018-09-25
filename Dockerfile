@@ -1,4 +1,4 @@
-FROM alpine:3.5
+FROM alpine:3.8
 
 # latest build in cfssl.org is 1.2 release, and it has broken initca function
 # which does not respect the expiry from the CSR, so I had to build custom static releases
